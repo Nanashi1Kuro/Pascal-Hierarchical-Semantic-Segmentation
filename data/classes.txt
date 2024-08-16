@@ -1,0 +1,7 @@
+0: bg
+1: low_hand
+2: torso
+3: low_leg
+4: head
+5: up_leg
+6: up_hand
