@@ -20,14 +20,14 @@ cd Hierarchical-Semantic-Segmentation
 
 **Создайте виртуальное окружение**
 
-   ```bash
-   python -m venv env
-   ```
+```bash
+python -m venv env
+```
    Активируйте виртуальное окружение:
     Для Linux/Mac:
-    ```bash
-    source env/bin/activate 
-    ```
+```bash
+source env/bin/activate 
+```
 ### 3. Установка зависимостей
 Обновите pip и установите зависимости из requirements.txt:
 
