@@ -113,8 +113,13 @@ cd Hierarchical-Semantic-Segmentation
    - <code>G<sub>c</sub></code> — истинные пиксели класса <code>c</code>.
 
    <p><strong>Intersection</strong> — это количество пикселей, которые принадлежат и предсказанному, и истинному классу. <strong>Union</strong> — это количество пикселей, которые принадлежат хотя бы одному из классов.</p>
+- **Визуализаия формулы IoU**:
 ![Визуализаия формулы IoU](./.images/IoU.png)
+
+- **Практичесеский пример IoU**:
 ![Практичесеский пример IoU](./.images/Sample_IoU.png)
+
+
 2. **mIoU** для всех классов рассчитывается как среднее значение IoU по всем классам, исключая фоновый класс:
 
    ![mIoU formula](https://latex.codecogs.com/svg.latex?\text{mIoU}%20%3D%20\frac{1}{N}%20%5Csum_{c%3D1}^{N}%20\text{IoU}_c)
