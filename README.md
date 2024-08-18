@@ -45,6 +45,48 @@ cd Hierarchical-Semantic-Segmentation
 
 Эта команда откроет Jupyter Notebook в вашем веб-браузере. Вы можете открыть и работать с файлом Segmentation.ipynb.
 
+## Инструкция по загрузке и распаковке весов моделей
+
+Для работы с этим проектом, необходимо скачать и распаковать веса некоторых моделей в папку `models`. Следуйте инструкциям ниже:
+
+### 1. Загрузка весов для UNet-ResNet50-Pretrained и UNet-ResNet50-Scratch
+
+Для загрузки весов моделей `UNet-ResNet50-Pretrained.pth` и `UNet-ResNet50-Scratch.pth`, используйте следующие команды:
+
+```bash
+# Загрузка UNet-ResNet50-Pretrained.pth
+wget --no-check-certificate 'https://drive.google.com/uc?export=download&id=12pNrMxtSA-4AHs0S3TbaEuyA6UKyB82l' -O models/UNet-ResNet50-Pretrained.pth
+
+# Загрузка UNet-ResNet50-Scratch.pth
+wget --no-check-certificate 'https://drive.google.com/uc?export=download&id=1EbGhuiAisb4-EmXinicFzVQDw8mJ45RF' -O models/UNet-ResNet50-Scratch.pth
+```
+### 2. Распаковка весов для DeepLabV3+ моделей
+Весы для моделей DeepLabV3+-ResNet50-Pretrained.zip и DeepLabV3+-ResNet50-Scratch.zip находятся в заархивированном виде. Чтобы распаковать их, выполните следующие команды:
+
+```bash
+# Распаковка DeepLabV3+-ResNet50-Pretrained.zip
+unzip models/DeepLabV3+-ResNet50-Pretrained.zip -d models/
+
+# Распаковка DeepLabV3+-ResNet50-Scratch.zip
+unzip models/DeepLabV3+-ResNet50-Scratch.zip -d models/
+```
+
+### 3. Проверка наличия остальных весов
+После загрузки и распаковки, убедитесь, что в папке models находятся следующие файлы:
+
+```plaintext
+models/
+├── DeepLabV3+-ResNet34-Pretrained.pth
+├── DeepLabV3+-ResNet34-Scratch.pth
+├── DeepLabV3+-ResNet50-Pretrained.pth
+├── DeepLabV3+-ResNet50-Scratch.pth
+├── UNet-ResNet34-Pretrained.pth
+├── UNet-ResNet34-Scratch.pth
+├── UNet-ResNet50-Pretrained.pth
+├── UNet-ResNet50-Scratch.pth
+```
+
+
 ### Структура репозитория
 
 ```plaintext
