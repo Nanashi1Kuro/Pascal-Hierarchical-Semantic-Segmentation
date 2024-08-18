@@ -38,10 +38,11 @@ cd Hierarchical-Semantic-Segmentation
 ### 4. Установка и запуск Jupyter Notebook
 Установите Jupyter Notebook и запустите
 
-```bash
-pip install jupyter
-jupyter notebook
-```
+   ```bash
+   pip install jupyter
+   jupyter notebook
+   ```
+
 Эта команда откроет Jupyter Notebook в вашем веб-браузере. Вы можете открыть и работать с файлом Segmentation.ipynb.
 
 ### Структура репозитория
